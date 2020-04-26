@@ -2,13 +2,16 @@ import React, { useState, useEffect } from "react";
 import useSound from "use-sound";
 import bountiesMp3 from "./bounties.mp3";
 import "./App.css";
+import { State } from "./state/state";
 
 function useDota2() {
-  const [state, setState] = useState();
+  const [state, setState] = useState<State>();
 
   useEffect(() => {
     const interval = setInterval(async () => {
-      setState(await (await fetch("http://localhost:3001/time")).json());
+      try {
+        setState(await (await fetch("http://localhost:3001/time")).json());
+      } catch {}
     }, 1000);
 
     return () => {
@@ -19,12 +22,8 @@ function useDota2() {
   return { state };
 }
 
-function needPlay(state) {
-  const time =
-    state &&
-    state.gamestate &&
-    state.gamestate.clock_time &&
-    state.gamestate.map.clock_time;
+function needPlay(state: any) {
+  const time = state?.gamestate?.map?.clock_time;
 
   if (!time) {
     return false;
