@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useInterval } from "./useInterval";
 
 const SERVER_URL = "http://localhost:3001/time";
-const UPDATE_FREQUENTLY = 1000;
+const UPDATE_FREQUENTLY = Number(process.env.REACT_APP_SERVER_UPDATE_FREQUENTLY);
 
 export function useServerState(): State {
   const [state, setState] = useState<State>({});
