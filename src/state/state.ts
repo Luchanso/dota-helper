@@ -125,6 +125,6 @@ export type GameState = {
 };
 
 export type State = {
-  ip: string;
-  gamestate: GameState;
+  ip?: string;
+  gamestate?: GameState;
 };
