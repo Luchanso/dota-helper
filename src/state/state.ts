@@ -115,7 +115,7 @@ export type GameState = {
   buildings: Buildings;
   provider: Provider;
   map?: Map;
-  player: Player;
+  player?: Player;
   hero: Hero;
   abilities: Abilities;
   items: Items;
