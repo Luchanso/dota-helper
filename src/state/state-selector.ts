@@ -121,3 +121,13 @@ export const LHTENSelector = createSelector(
   (benchmarksResult) =>
     benchmark95PercentileSelector(benchmarksResult?.lhten)?.value
 );
+
+export const isLess11MinutesSelector = (state: State) => {
+  const time = clockTimeSelector(state);
+
+  if (!time) {
+    return false;
+  }
+
+  return time <= 60 * 11;
+};

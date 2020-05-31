@@ -3,7 +3,7 @@ import { useDota2 } from "./hooks/useDota2";
 import { Stat } from "./components/Stat/Stat";
 import "./App.css";
 import {
-  // clockTimeSelector,
+  isLess11MinutesSelector,
   gpmSelector,
   benchmarksGPM95Selector,
   benchmarksLVL95Selector,
@@ -13,6 +13,7 @@ import {
 
 function App() {
   const state = useDota2();
+  const isLess11Minutes = isLess11MinutesSelector(state);
 
   return (
     <div className="App">
@@ -23,7 +24,7 @@ function App() {
         <Stat name="GPM" value={benchmarksGPM95Selector(state)} />
         <Stat name="LVL" value={benchmarksLVL95Selector(state)} />
         <Stat name="LH" value={LHSelector(state)} />
-        <Stat name="LHTEN" value={LHTENSelector(state)} />
+        {isLess11Minutes && <Stat name="LHTEN" value={LHTENSelector(state)} />}
       </header>
     </div>
   );
