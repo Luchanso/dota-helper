@@ -24,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node server/index"
+    "server": "node server/index",
+    "all": "npm-run-all -p -r start server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.6",
-    "@types/ramda": "^0.27.4"
+    "@types/ramda": "^0.27.4",
+    "npm-run-all": "^4.1.5"
   }
 }
