@@ -124,7 +124,43 @@ export type GameState = {
   previously?: GameState;
 };
 
+export type Percentile =
+  | 0.2
+  | 0.3
+  | 0.4
+  | 0.5
+  | 0.6
+  | 0.7
+  | 0.8
+  | 0.9
+  | 0.95
+  | 0.99;
+
+export type Bench = {
+  percentile?: Percentile;
+  value: number;
+};
+
+export type BenchmarksResult = {
+  gold_per_min?: Bench[];
+  hero_damage_per_min?: Bench[];
+  hero_healing_per_min?: Bench[];
+  kills_per_min?: Bench[];
+  last_hits_per_min?: Bench[];
+  lhten?: Bench[];
+  stuns_per_min?: Bench[];
+  tower_damage?: Bench[];
+  xp_per_min?: Bench[];
+};
+
+export type Benchmarks = {
+  hero_id?: number;
+  result?: BenchmarksResult;
+  error?: any;
+};
+
 export type State = {
   ip?: string;
   gamestate?: GameState;
+  benchmarks?: Benchmarks;
 };

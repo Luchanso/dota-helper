@@ -4,10 +4,10 @@ import bountiesMp3 from "./bounties.mp3";
 import { State } from "../../state/state";
 import { clockTimeSelector } from "../../state/state-selector";
 
-export const BOUNTY_RUNE_INTERVAL = Number(process.env.REACT_APP_BOUNTY_RUNE_INTERVAL);
+export const BOUNTY_RUNE_INTERVAL = Number(
+  process.env.REACT_APP_BOUNTY_RUNE_INTERVAL
+);
 export const ALARM_BEFORE = Number(process.env.REACT_APP_ALARM_BEFORE);
-
-console.log(process.env)
 
 export function getInterval(seconds: number) {
   return Math.floor(seconds / BOUNTY_RUNE_INTERVAL);
@@ -38,5 +38,5 @@ export function useBountyRunes(state: State) {
       play();
       setLastIntervalPlay(getInterval(clockTime + ALARM_BEFORE));
     }
-  }, [clockTime, lastIntervalPlay]);
+  }, [clockTime, lastIntervalPlay, play]);
 }
