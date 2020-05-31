@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.6",
     "cors": "^2.8.5",
     "dota2-gsi": "^1.0.2",
+    "electron": "^9.0.0",
     "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -25,7 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server/index",
-    "all": "npm-run-all -p -r start server"
+    "all": "npm-run-all -p -r start server",
+    "frame": "electron frame/main.js"
   },
   "eslintConfig": {
     "extends": "react-app"
