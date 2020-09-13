@@ -1,15 +1,30 @@
 import React from "react";
-import "./stat.css";
+import styled, { css } from "styled-components";
 
 type Props = {
   name: string;
   value?: number | string;
+  warning?: boolean;
+  onClick?: () => void;
 };
 
-export function Stat({ name, value }: Props) {
+const StatContainer = styled.div`
+  ${(props: { warning: boolean }) =>
+    props.warning &&
+    css`
+      color: #ffc77d;
+    `}
+`;
+
+export function Stat({
+  name,
+  value,
+  warning = false,
+  onClick = () => {},
+}: Props) {
   return (
-    <div className="stat">
+    <StatContainer warning={warning} onClick={onClick}>
       {name}: {value}
-    </div>
+    </StatContainer>
   );
 }
