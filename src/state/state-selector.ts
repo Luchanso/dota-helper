@@ -64,18 +64,18 @@ export const benchmarksHasErrorSelector = (state: State) =>
   !!benchmarksSelector(state)?.error;
 
 export const benchmark95PercentileSelector = (benches: Bench[] | undefined) =>
-  benches?.find((bench) => bench.percentile === 0.95);
+  benches?.find((bench) => bench.percentile === 0.99);
 
 export const benchmarksResultSelector = (state: State) =>
   benchmarksSelector(state)?.result;
 
-export const benchmarksGPM95Selector = createSelector(
+export const benchmarksGPMSelector = createSelector(
   benchmarksResultSelector,
   (benchmarksResult) =>
     benchmark95PercentileSelector(benchmarksResult?.gold_per_min)?.value
 );
 
-export const benchmarksLVL95Selector = createSelector(
+export const benchmarksLVLSelector = createSelector(
   benchmarksResultSelector,
   clockTimeSelector,
   (benchmarksResult, time) => {
@@ -130,4 +130,8 @@ export const isLess11MinutesSelector = (state: State) => {
   }
 
   return time <= 60 * 11;
+};
+
+export const steamId = (state: State) => {
+  // state.gamestate?.draft
 };
