@@ -46,9 +46,10 @@ function App() {
         const matches = await (
           await fetch(formMatchUrl(filteredIds[i]))
         ).json();
-        const {
-          profile: { personaname },
-        } = await (await fetch(formPlayerUrl(filteredIds[i]))).json();
+
+        const data = await (await fetch(formPlayerUrl(filteredIds[i]))).json();
+        const profile = data.profile || {};
+        const personaname = profile.personaname || null;
 
         if (matches.length > 0) {
           state.push({
