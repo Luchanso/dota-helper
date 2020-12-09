@@ -31,7 +31,7 @@
     "eject": "react-scripts eject",
     "server": "node server/index",
     "counter-pick": "cd counter-pick && yarn start",
-    "all": "npm-run-all -p -r start server frame counter-pick",
+    "all": "npm-run-all -p -r start server frame",
     "frame": "electron frame/main.js"
   },
   "eslintConfig": {
