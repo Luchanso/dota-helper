@@ -22,7 +22,7 @@
     "reselect": "4.0.0",
     "styled-components": "5.2.1",
     "typescript": "3.9.7",
-    "use-sound": "1.0.2"
+    "use-sound": "2.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
