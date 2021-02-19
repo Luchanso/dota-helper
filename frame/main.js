@@ -15,7 +15,13 @@ function createWindow() {
     },
   });
   win.setAlwaysOnTop(true, "screen-saver");
-  win.loadURL("http://localhost:3000");
+
+  function loadWindow() {
+    setTimeout(() => {
+      win.loadURL("http://localhost:3000").catch(loadWindow);
+    }, 3000);
+  }
+  loadWindow();
   win.setPosition(0, 155);
 
   // Open the DevTools.
