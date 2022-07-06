@@ -18,6 +18,9 @@ function isNegative(N: number) {
 }
 
 export function isNeedToPlay(gameTime: number, lastIntervalPlay: number) {
+  if (lastIntervalPlay < 0 || gameTime < 0) {
+    return false;
+  }
   const currentInterval = getInterval(gameTime); // 31 -> 0
   const nextInterval = getInterval(gameTime + ALARM_BEFORE); // 31 -> 1
 
