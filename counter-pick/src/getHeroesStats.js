@@ -34,7 +34,10 @@ export const getHeroesStats = (matches) => {
       return 0;
     })
     .slice(0, 3)
-    .map(([heroId, plays]) => ({ name: heroes[heroId].localized_name, plays }));
+    .map(([heroId, plays]) => ({
+      name: (heroes[heroId] || {}).localized_name,
+      plays,
+    }));
 
   return {
     topHeroes,
