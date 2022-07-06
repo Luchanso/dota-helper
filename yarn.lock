@@ -6238,7 +6238,7 @@ __metadata:
     react-scripts: 4.0.1
     reselect: 4.0.0
     styled-components: 5.2.1
-    typescript: 3.9.7
+    typescript: 4.7.4
     use-sound: 2.0.1
   languageName: unknown
   linkType: soft
@@ -15525,23 +15525,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:3.9.7":
-  version: 3.9.7
-  resolution: "typescript@npm:3.9.7"
+"typescript@npm:4.7.4":
+  version: 4.7.4
+  resolution: "typescript@npm:4.7.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: d549bf1d3a93796b45be9d1dbebbef63777f8cc4d788461f4bfdb6cb07371a97d3e471c7f39dbe31107e8a25d6d8b2ef5e967af7e8e1768d9560bd95095b360b
+  checksum: 5750181b1cd7e6482c4195825547e70f944114fb47e58e4aa7553e62f11b3f3173766aef9c281783edfd881f7b8299cf35e3ca8caebe73d8464528c907a164df
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@3.9.7#~builtin<compat/typescript>":
-  version: 3.9.7
-  resolution: "typescript@patch:typescript@npm%3A3.9.7#~builtin<compat/typescript>::version=3.9.7&hash=7ad353"
+"typescript@patch:typescript@4.7.4#~builtin<compat/typescript>":
+  version: 4.7.4
+  resolution: "typescript@patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: be4742230d87145344866f264771c0d78fe548479694279de1d8c9b1ea0942b1016a1957f87952924b370f86107bc71d95eb7feea16ad8875c61c571aca280e6
+  checksum: 9096d8f6c16cb80ef3bf96fcbbd055bf1c4a43bd14f3b7be45a9fbe7ada46ec977f604d5feed3263b4f2aa7d4c7477ce5f9cd87de0d6feedec69a983f3a4f93e
   languageName: node
   linkType: hard
 
