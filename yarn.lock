@@ -5969,7 +5969,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     react-scripts: 5.0.1
-    reselect: 4.0.0
+    reselect: 4.1.6
     styled-components: 5.3.5
     typescript: 4.7.4
     use-sound: 4.0.1
@@ -12278,10 +12278,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reselect@npm:4.0.0":
-  version: 4.0.0
-  resolution: "reselect@npm:4.0.0"
-  checksum: ac7dfc9ef2cdb42b6fc87a856f3ce904c2e4363a2bc1e6fb7eea5f78902a6f506e4388e6509752984877c6dbfe501100c076671d334799eb5a1bfe9936cb2c12
+"reselect@npm:4.1.6":
+  version: 4.1.6
+  resolution: "reselect@npm:4.1.6"
+  checksum: 3ea1058422904063ec93c8f4693fe33dcb2178bbf417ace8db5b2c797a5875cf357d9308d11ed3942ee22507dd34ecfbf1f3a21340a4f31c206cab1d36ceef31
   languageName: node
   linkType: hard
 
