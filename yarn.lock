@@ -6034,7 +6034,7 @@ __metadata:
     reselect: 4.0.0
     styled-components: 5.2.1
     typescript: 4.7.4
-    use-sound: 2.0.1
+    use-sound: 4.0.1
   languageName: unknown
   linkType: soft
 
@@ -14271,14 +14271,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sound@npm:2.0.1":
-  version: 2.0.1
-  resolution: "use-sound@npm:2.0.1"
+"use-sound@npm:4.0.1":
+  version: 4.0.1
+  resolution: "use-sound@npm:4.0.1"
   dependencies:
     howler: ^2.1.3
   peerDependencies:
     react: ">=16.8"
-  checksum: 46c99438f329f6ca87de50a840757262ec7571010c2bd94251aca8339ea1d6062490d6f89eaf86cbeba6995b1e83f1214aed96391ee7e2668df899694458b536
+  checksum: 0920ec7fe549073497b92949e7f7a9ac17287acc723bf5ab76c9378d4667ef3a39e1d64fae189e3ad4ac42641d561cc48836f4bbe75ea038562292ee24d3fa3b
   languageName: node
   linkType: hard
 
