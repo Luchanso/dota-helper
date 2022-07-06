@@ -106,7 +106,7 @@ export function useRoshanSpawn(state: State) {
         isPlayedSound: true,
       });
     }
-  }, [roshanStopwatch, currentGameTime, setRoshanStopwatch]);
+  }, [roshanStopwatch, currentGameTime, setRoshanStopwatch, play]);
 
   return { handleDead, handleReset, isDead, isDeadOrLive, timeToSpawn };
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { useDota2 } from "./hooks/useDota2";
 import { Stat } from "./components/Stat/Stat";
 import "./App.css";
@@ -9,6 +8,7 @@ import {
   benchmarksLVLSelector,
   LHSelector,
   LHTENSelector,
+  playerSelector,
 } from "./state/state-selector";
 import { RoshanButton } from "./components/RoshanButton";
 import { Draggable } from "./components/Draggable";
