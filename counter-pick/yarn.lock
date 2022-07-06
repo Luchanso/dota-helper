@@ -5401,7 +5401,7 @@ __metadata:
     "@testing-library/jest-dom": 4.2.4
     "@testing-library/react": 11.2.7
     "@testing-library/user-event": 12.3.0
-    dotaconstants: 6.38.0
+    dotaconstants: 7.11.0
     react: 18.2.0
     react-dom: 18.2.0
     react-scripts: 4.0.1
@@ -6262,10 +6262,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotaconstants@npm:6.38.0":
-  version: 6.38.0
-  resolution: "dotaconstants@npm:6.38.0"
-  checksum: b754aa20a3e6142a964b6f39ed7096088d23bb91c1018428e0dcb2cc81ae33f144f456033bc427b0708dcaf529438c6327f0cf88afc62b05277927532240c336
+"dotaconstants@npm:7.11.0":
+  version: 7.11.0
+  resolution: "dotaconstants@npm:7.11.0"
+  checksum: aed564bd437c5c181120f80cea70dd87eae44a43e961a3367cbdea6d731ff1823a161592161c0448b31e6067bb6d95114fae392eb667b3768e34f9748b4a05d3
   languageName: node
   linkType: hard
 
