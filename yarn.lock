@@ -2496,16 +2496,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/react@npm:11.2.2":
-  version: 11.2.2
-  resolution: "@testing-library/react@npm:11.2.2"
+"@testing-library/react@npm:11.2.7":
+  version: 11.2.7
+  resolution: "@testing-library/react@npm:11.2.7"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@testing-library/dom": ^7.28.1
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: e0653eacc8eea7833c809f1439c5f4370b23746bc4962505c480947f41dc9a7f341d3869774d2f1fdd8e464109d92add6fa8339c13792e9de34d1662ae17aef1
+  checksum: 64e07cb96e40dbdbd3c46a09c47bed14446b30efafaa65a5d4fed5a7553878990cda108578f2b114422a775f31c635d51fd50b752f6163ddd6b8474e0e5fc2ce
   languageName: node
   linkType: hard
 
@@ -6218,7 +6218,7 @@ __metadata:
   resolution: "dota-helper@workspace:."
   dependencies:
     "@testing-library/jest-dom": 4.2.4
-    "@testing-library/react": 11.2.2
+    "@testing-library/react": 11.2.7
     "@testing-library/user-event": 12.3.0
     "@types/express": 4.17.9
     "@types/jest": 26.0.16
