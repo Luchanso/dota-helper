@@ -1,7 +1,7 @@
 import fs from "fs";
 
 const DEFAULT_FILE =
-  "C:\\Program Files (x86)\\Steam\\steamapps\\common\\dota 2 beta\\game\\dota\\server_log.txt";
+  "D:\\SteamApps\\steamapps\\common\\dota 2 beta\\game\\dota\\server_log.txt";
 
 const getDotaIdsFromLine = (line) => {
   let playersRegex = /\d:(\[U:\d:(\d+)])/g;
