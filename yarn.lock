@@ -2719,13 +2719,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:26.0.16":
-  version: 26.0.16
-  resolution: "@types/jest@npm:26.0.16"
+"@types/jest@npm:26.0.24":
+  version: 26.0.24
+  resolution: "@types/jest@npm:26.0.24"
   dependencies:
     jest-diff: ^26.0.0
     pretty-format: ^26.0.0
-  checksum: f12d6c38ad13b311d52aaad2f526ca63ab86e314621b9b54ec36f135344b95b34c49740e1b78b01032272f4c1c62293e58ad0670be716ce78815bf36c67b87ee
+  checksum: ae39675412f08d884926254e9b12bfd2b5a4e4d204c94d3148cb942174a474930d0c60540133c968f22241d4712b7940c96cbc883096eb326a4d5b206fb78bd0
   languageName: node
   linkType: hard
 
@@ -6221,7 +6221,7 @@ __metadata:
     "@testing-library/react": 11.2.7
     "@testing-library/user-event": 12.3.0
     "@types/express": 4.17.9
-    "@types/jest": 26.0.16
+    "@types/jest": 26.0.24
     "@types/node": 13.13.30
     "@types/ramda": 0.27.30
     "@types/react": 17.0.0
