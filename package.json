@@ -9,7 +9,7 @@
     "@types/jest": "26.0.24",
     "@types/node": "13.13.30",
     "@types/react": "18.0.15",
-    "@types/react-dom": "17.0.0",
+    "@types/react-dom": "17.0.17",
     "cors": "2.8.5",
     "dota2-gsi": "1.0.2",
     "electron": "19.0.7",
