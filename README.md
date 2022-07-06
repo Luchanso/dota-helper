@@ -15,24 +15,4 @@
 
 # TODO
 
-- [x] Yarn 2.0
-- [ ] Update dependencies
-- [ ] Convert to Monorepo
-- [ ] Dynamic configuration
-- [ ] Автоконфигурация игры
-
-- [ ] Timing Coach update
-  - [ ] Early spawn timings
-  - [ ] Catapults
-  - [ ] Stack timer
-  - [ ] Bounty runes
-  - [ ] Roshan Analize
-- [ ] Daytime Changed - Time to Gang / Placing wards
-- [ ] Item build Recommendation
-- [ ] Analyze - can we deny tower?
-- [ ] Current net worse
-- [ ] Аналитика по контрпику
-- [ ] Ability Build Stats
-
-- [ ] Screen capture
-- [ ] Analize Rosh message
+Moved in issue: https://github.com/Luchanso/dota-helper/issues/57
