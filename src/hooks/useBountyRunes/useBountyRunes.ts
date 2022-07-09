@@ -30,8 +30,6 @@ export function useBountyRunes(state: State) {
     }
 
     const needToPlay = clockTime >= nextInterval;
-    console.log("need play:", needToPlay);
-    console.log("clockTime, nextInterval", clockTime, nextInterval);
 
     if (needToPlay) {
       play();

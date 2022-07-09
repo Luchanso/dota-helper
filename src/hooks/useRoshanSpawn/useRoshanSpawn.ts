@@ -58,6 +58,10 @@ function schrodingerRoshan(
   );
 }
 
+function spawnProbability({ time }: RoshanStopwatch, currentGameTime: number) {
+  return (currentGameTime - time) / (RESPAWN_TIME.MAXIMUM / 100);
+}
+
 function needToPlaySound(
   { time, isPlayedSound, isActive }: RoshanStopwatch,
   currentGameTime: number
@@ -97,6 +101,7 @@ export function useRoshanSpawn(state: State) {
   const isDead = roshanIsDead(roshanStopwatch, currentGameTime);
   const isDeadOrLive = schrodingerRoshan(roshanStopwatch, currentGameTime);
   const timeToSpawn = roshanTimeDeadSelector(roshanStopwatch, currentGameTime);
+  const probability = spawnProbability(roshanStopwatch, currentGameTime);
 
   useEffect(() => {
     if (needToPlaySound(roshanStopwatch, currentGameTime)) {
@@ -108,5 +113,12 @@ export function useRoshanSpawn(state: State) {
     }
   }, [roshanStopwatch, currentGameTime, setRoshanStopwatch, play]);
 
-  return { handleDead, handleReset, isDead, isDeadOrLive, timeToSpawn };
+  return {
+    handleDead,
+    handleReset,
+    isDead,
+    isDeadOrLive,
+    timeToSpawn,
+    probability,
+  };
 }
