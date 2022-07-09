@@ -9,6 +9,7 @@ type Props = {
 };
 
 const StatContainer = styled.div`
+  margin: 2px 0;
   ${(props: { warning: boolean }) =>
     props.warning &&
     css`
@@ -22,6 +23,10 @@ export function Stat({
   warning = false,
   onClick = () => {},
 }: Props) {
+  if (!value) {
+    return null;
+  }
+
   return (
     <StatContainer warning={warning} onClick={onClick}>
       {name}: {value}
