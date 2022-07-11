@@ -45,7 +45,7 @@ function App() {
       <AppHeader className="App-header">
         {/* <Stat name="time" value={clockTimeSelector(state)} /> */}
         <Stat name="GPM" value={gpmSelector(state)} />
-        ----- Best play -----
+        <br />
         <Stat name="GPM" value={benchmarksGPMSelector(state)} />
         <Stat name="LVL" value={benchmarksLVLSelector(state)} />
         <Stat name="LH" value={LHSelector(state)} />
