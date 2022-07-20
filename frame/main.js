@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, screen } = require("electron");
 
 // app.disableHardwareAcceleration();
 
@@ -6,7 +6,7 @@ function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
     width: 210,
-    height: 300,
+    height: 200,
     // alwaysOnTop: true,
     frame: false,
     transparent: true,
@@ -22,7 +22,7 @@ function createWindow() {
     }, 3000);
   }
   loadWindow();
-  win.setPosition(0, 155);
+  win.setPosition(screen.getPrimaryDisplay().workAreaSize.width / 4 - 150, 0);
 
   // Open the DevTools.
   //   win.webContents.openDevTools();

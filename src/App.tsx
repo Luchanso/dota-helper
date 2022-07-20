@@ -42,7 +42,7 @@ function App() {
     <>
       <GlobalStyle />
       <Draggable />
-      <AppHeader className="App-header">
+      <AppHeader>
         {/* <Stat name="time" value={clockTimeSelector(state)} /> */}
         <Stat name="GPM" value={gpmSelector(state)} />
         <br />
