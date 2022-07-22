@@ -5979,7 +5979,7 @@ __metadata:
     "@types/styled-components": 5.1.25
     cors: 2.8.5
     dota2-gsi: 1.0.2
-    electron: 19.0.8
+    electron: 19.0.9
     express: 4.18.1
     npm-run-all: 4.1.5
     ramda: 0.28.0
@@ -6064,16 +6064,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:19.0.8":
-  version: 19.0.8
-  resolution: "electron@npm:19.0.8"
+"electron@npm:19.0.9":
+  version: 19.0.9
+  resolution: "electron@npm:19.0.9"
   dependencies:
     "@electron/get": ^1.14.1
     "@types/node": ^16.11.26
     extract-zip: ^1.0.3
   bin:
     electron: cli.js
-  checksum: cbd4c11058eb3c656c4f589cd7b3a58b6ce2f9ac773b369c453a690bfca7e3b8c96939555b0cfce9a2afcd1af9b8d05fffaa3c45375bf3f2eb0c09735ccd5525
+  checksum: 662e63216c2802340cd1d2f28664818ec30fade0e1cb9da3a1afb2b13b2c6d920d1506b2c62442ea0118ba8965edee3f1e7c365b8cd1d4060f9a250db1161d47
   languageName: node
   linkType: hard
 
