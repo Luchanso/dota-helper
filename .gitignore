@@ -27,7 +27,7 @@ yarn-error.log*
 *.log
 
 .pnp.*
-.yarn/*
+.yarn
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
