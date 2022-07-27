@@ -29,7 +29,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "node server/index",
-    "counter-pick": "cd counter-pick && yarn start",
+    "counter-pick": "yarn workspace counter-pick start",
     "all": "npm-run-all -p -r start server frame",
     "frame": "electron frame/main.js"
   },
