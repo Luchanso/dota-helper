@@ -3008,12 +3008,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:14.2.6":
-  version: 14.2.6
-  resolution: "@testing-library/user-event@npm:14.2.6"
+"@testing-library/user-event@npm:14.5.2":
+  version: 14.5.2
+  resolution: "@testing-library/user-event@npm:14.5.2"
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: 5de10c5a9580fa0dcfb0d97cff1327a6ea56c59c3fb6582cc85fcc592f966b6171eefe5841c22cae86f25ec2c66aa1ea216fd54bfa494b7fd33cbd930108dcc4
+  checksum: d76937dffcf0082fbf3bb89eb2b81a31bf5448048dd61c33928c5f10e33a58e035321d39145cefd469bb5a499c68a5b4086b22f1a44e3e7c7e817dc5f6782867
   languageName: node
   linkType: hard
 
@@ -5282,7 +5282,7 @@ __metadata:
   dependencies:
     "@testing-library/jest-dom": 5.16.4
     "@testing-library/react": 13.3.0
-    "@testing-library/user-event": 14.2.6
+    "@testing-library/user-event": 14.5.2
     dotaconstants: 7.11.0
     react: 18.2.0
     react-dom: 18.2.0
