@@ -13,7 +13,7 @@
     "cors": "2.8.5",
     "dota2-gsi": "1.0.2",
     "electron": "19.0.9",
-    "express": "4.18.1",
+    "express": "4.20.0",
     "ramda": "0.28.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
